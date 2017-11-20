@@ -15,9 +15,9 @@
 package en
 
 import (
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/analysis/token/stop"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/redsift/bleve/analysis"
+	"github.com/redsift/bleve/analysis/token/stop"
+	"github.com/redsift/bleve/registry"
 )
 
 func StopTokenFilterConstructor(config map[string]interface{}, cache *registry.Cache) (analysis.TokenFilter, error) {

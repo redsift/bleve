@@ -17,7 +17,7 @@ package document
 import (
 	"fmt"
 
-	"github.com/blevesearch/bleve/analysis"
+	"github.com/redsift/bleve/analysis"
 )
 
 const DefaultTextIndexingOptions = IndexField

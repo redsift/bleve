@@ -15,8 +15,8 @@
 package single
 
 import (
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/redsift/bleve/analysis"
+	"github.com/redsift/bleve/registry"
 )
 
 const Name = "single"

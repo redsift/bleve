@@ -17,7 +17,7 @@ package bleve
 import (
 	"time"
 
-	"github.com/blevesearch/bleve/search/query"
+	"github.com/redsift/bleve/search/query"
 )
 
 // NewBoolFieldQuery creates a new Query for boolean fields

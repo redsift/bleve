@@ -17,11 +17,11 @@ package upsidedown
 import (
 	"testing"
 
-	"github.com/blevesearch/bleve/analysis/analyzer/standard"
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store/null"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/redsift/bleve/analysis/analyzer/standard"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/index/store/null"
+	"github.com/redsift/bleve/registry"
 )
 
 func TestAnalysisBug328(t *testing.T) {

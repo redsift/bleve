@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/search"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/search"
 	"golang.org/x/net/context"
 )
 

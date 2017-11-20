@@ -22,12 +22,12 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/mapping"
-	"github.com/blevesearch/bleve/numeric"
-	"github.com/blevesearch/bleve/search"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/index/store"
+	"github.com/redsift/bleve/mapping"
+	"github.com/redsift/bleve/numeric"
+	"github.com/redsift/bleve/search"
 )
 
 func TestIndexAliasSingle(t *testing.T) {

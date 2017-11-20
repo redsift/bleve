@@ -18,8 +18,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/blevesearch/bleve/numeric"
-	"github.com/blevesearch/bleve/search"
+	"github.com/redsift/bleve/numeric"
+	"github.com/redsift/bleve/search"
 )
 
 type dateTimeRange struct {

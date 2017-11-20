@@ -18,11 +18,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/analysis/analyzer/standard"
-	"github.com/blevesearch/bleve/analysis/datetime/optional"
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/redsift/bleve/analysis"
+	"github.com/redsift/bleve/analysis/analyzer/standard"
+	"github.com/redsift/bleve/analysis/datetime/optional"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/registry"
 )
 
 var MappingJSONStrict = false

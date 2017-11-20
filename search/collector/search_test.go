@@ -15,9 +15,9 @@
 package collector
 
 import (
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/search"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/search"
 )
 
 type stubSearcher struct {

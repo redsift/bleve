@@ -19,8 +19,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/search"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/search"
 )
 
 func TestTop10Scores(t *testing.T) {

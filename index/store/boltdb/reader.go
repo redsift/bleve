@@ -15,7 +15,7 @@
 package boltdb
 
 import (
-	"github.com/blevesearch/bleve/index/store"
+	"github.com/redsift/bleve/index/store"
 	"github.com/boltdb/bolt"
 )
 

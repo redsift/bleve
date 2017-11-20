@@ -18,8 +18,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/index/store/test"
+	"github.com/redsift/bleve/index/store"
+	"github.com/redsift/bleve/index/store/test"
 	"github.com/boltdb/bolt"
 )
 

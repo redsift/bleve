@@ -18,10 +18,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/analysis/tokenizer/exception"
-	"github.com/blevesearch/bleve/analysis/tokenizer/unicode"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/redsift/bleve/analysis"
+	"github.com/redsift/bleve/analysis/tokenizer/exception"
+	"github.com/redsift/bleve/analysis/tokenizer/unicode"
+	"github.com/redsift/bleve/registry"
 )
 
 const Name = "web"

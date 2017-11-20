@@ -17,8 +17,8 @@ package scorer
 import (
 	"fmt"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/search"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/search"
 )
 
 type ConstantScorer struct {

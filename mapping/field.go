@@ -21,9 +21,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/geo"
+	"github.com/redsift/bleve/analysis"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/geo"
 )
 
 // control the default behavior for dynamic fields (those not explicitly mapped)

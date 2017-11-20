@@ -15,11 +15,11 @@
 package standard
 
 import (
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/analysis/lang/en"
-	"github.com/blevesearch/bleve/analysis/token/lowercase"
-	"github.com/blevesearch/bleve/analysis/tokenizer/unicode"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/redsift/bleve/analysis"
+	"github.com/redsift/bleve/analysis/lang/en"
+	"github.com/redsift/bleve/analysis/token/lowercase"
+	"github.com/redsift/bleve/analysis/tokenizer/unicode"
+	"github.com/redsift/bleve/registry"
 )
 
 const Name = "standard"

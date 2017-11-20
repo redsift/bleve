@@ -15,10 +15,10 @@
 package bleve
 
 import (
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/mapping"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/index/store"
+	"github.com/redsift/bleve/mapping"
 	"golang.org/x/net/context"
 )
 

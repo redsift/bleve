@@ -21,8 +21,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/blevesearch/bleve/geo"
-	"github.com/blevesearch/bleve/numeric"
+	"github.com/redsift/bleve/geo"
+	"github.com/redsift/bleve/numeric"
 )
 
 var HighTerm = strings.Repeat(string([]byte{0xff}), 10)

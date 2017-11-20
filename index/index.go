@@ -19,8 +19,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index/store"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/index/store"
 )
 
 var ErrorUnknownStorageType = fmt.Errorf("unknown storage type")

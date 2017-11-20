@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blevesearch/bleve/analysis/tokenizer/exception"
-	"github.com/blevesearch/bleve/analysis/tokenizer/regexp"
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/numeric"
+	"github.com/redsift/bleve/analysis/tokenizer/exception"
+	"github.com/redsift/bleve/analysis/tokenizer/regexp"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/numeric"
 )
 
 var mappingSource = []byte(`{

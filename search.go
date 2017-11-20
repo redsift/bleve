@@ -19,11 +19,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/analysis/datetime/optional"
-	"github.com/blevesearch/bleve/registry"
-	"github.com/blevesearch/bleve/search"
-	"github.com/blevesearch/bleve/search/query"
+	"github.com/redsift/bleve/analysis"
+	"github.com/redsift/bleve/analysis/datetime/optional"
+	"github.com/redsift/bleve/registry"
+	"github.com/redsift/bleve/search"
+	"github.com/redsift/bleve/search/query"
 )
 
 var cache = registry.NewCache()

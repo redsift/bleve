@@ -30,13 +30,13 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/blevesearch/bleve/analysis/analyzer/keyword"
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store/null"
-	"github.com/blevesearch/bleve/mapping"
-	"github.com/blevesearch/bleve/search"
-	"github.com/blevesearch/bleve/search/query"
+	"github.com/redsift/bleve/analysis/analyzer/keyword"
+	"github.com/redsift/bleve/document"
+	"github.com/redsift/bleve/index"
+	"github.com/redsift/bleve/index/store/null"
+	"github.com/redsift/bleve/mapping"
+	"github.com/redsift/bleve/search"
+	"github.com/redsift/bleve/search/query"
 )
 
 func TestCrud(t *testing.T) {
