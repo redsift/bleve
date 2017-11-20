@@ -15,7 +15,7 @@
 package unicode
 
 import (
-	"github.com/redsift/segment"
+	"github.com/blevesearch/segment"
 
 	"github.com/redsift/bleve/analysis"
 	"github.com/redsift/bleve/registry"

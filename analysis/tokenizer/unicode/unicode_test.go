@@ -19,7 +19,7 @@ import (
 	"testing"
 
 	"github.com/redsift/bleve/analysis"
-	"github.com/redsift/segment"
+	"github.com/blevesearch/segment"
 )
 
 func TestUnicode(t *testing.T) {
