@@ -205,6 +205,34 @@ func TestQuerySyntaxParserValid(t *testing.T) {
 				nil),
 		},
 		{
+			input:   `+hostIP:"192.168.1.1"`,
+			mapping: mapping.NewIndexMapping(),
+			result: NewBooleanQueryForQueryString(
+				[]Query{
+					func() Query {
+						q := NewIPRangeQuery("192.168.1.1")
+						q.SetField("hostIP")
+						return q
+					}(),
+				},
+				nil,
+				nil),
+		},
+		{
+			input:   `+hostIP:"192.168.1.1/24"`,
+			mapping: mapping.NewIndexMapping(),
+			result: NewBooleanQueryForQueryString(
+				[]Query{
+					func() Query {
+						q := NewIPRangeQuery("192.168.1.1/24")
+						q.SetField("hostIP")
+						return q
+					}(),
+				},
+				nil,
+				nil),
+		},
+		{
 			input:   `-field5:"test phrase 2"`,
 			mapping: mapping.NewIndexMapping(),
 			result: NewBooleanQueryForQueryString(
@@ -809,14 +837,16 @@ func TestQuerySyntaxParserValid(t *testing.T) {
 	// logger = log.New(os.Stderr, "bleve ", log.LstdFlags)
 
 	for _, test := range tests {
+		t.Run(test.input, func(t *testing.T) {
 
-		q, err := parseQuerySyntax(test.input)
-		if err != nil {
-			t.Fatal(err)
-		}
-		if !reflect.DeepEqual(q, test.result) {
-			t.Errorf("Expected %#v, got %#v: for %s", test.result, q, test.input)
-		}
+			q, err := parseQuerySyntax(test.input)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if !reflect.DeepEqual(q, test.result) {
+				t.Errorf("Expected %#v, got %#v: for %s", test.result, q, test.input)
+			}
+		})
 	}
 }
 
@@ -853,10 +883,12 @@ func TestQuerySyntaxParserInvalid(t *testing.T) {
 	// logger = log.New(os.Stderr, "bleve", log.LstdFlags)
 
 	for _, test := range tests {
-		_, err := parseQuerySyntax(test.input)
-		if err == nil {
-			t.Errorf("expected error, got nil for `%s`", test.input)
-		}
+		t.Run(test.input, func(t *testing.T) {
+			_, err := parseQuerySyntax(test.input)
+			if err == nil {
+				t.Errorf("expected error, got nil for `%s`", test.input)
+			}
+		})
 	}
 }
 

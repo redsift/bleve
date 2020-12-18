@@ -61,6 +61,15 @@ func (q *IPRangeQuery) Searcher(i index.IndexReader, m mapping.IndexMapping, opt
 	return cq.Searcher(i, m, options)
 }
 
+func isIPRange(s string) bool {
+	_, _, err := net.ParseCIDR(s)
+	if err == nil {
+		return true
+	}
+	ip := net.ParseIP(s)
+	return ip != nil
+}
+
 func (q *IPRangeQuery) Validate() error {
 	return nil
 }
