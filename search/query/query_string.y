@@ -185,7 +185,12 @@ tSTRING tCOLON tPHRASE {
 	field := $1
 	phrase := $3
 	logDebugGrammar("FIELD - %s PHRASE - %s", field, phrase)
-	q := NewMatchPhraseQuery(phrase)
+	var q FieldableQuery
+	if isIPRange(phrase) {
+	  q = NewIPRangeQuery(phrase)
+	} else {
+	  q = NewMatchPhraseQuery(phrase)
+	}
 	q.SetField(field)
 	$$ = q
 }

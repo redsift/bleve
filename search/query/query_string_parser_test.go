@@ -215,6 +215,34 @@ func TestQuerySyntaxParserValid(t *testing.T) {
 				nil),
 		},
 		{
+			input:   `+hostIP:"192.168.1.1"`,
+			mapping: mapping.NewIndexMapping(),
+			result: NewBooleanQueryForQueryString(
+				[]Query{
+					func() Query {
+						q := NewIPRangeQuery("192.168.1.1")
+						q.SetField("hostIP")
+						return q
+					}(),
+				},
+				nil,
+				nil),
+		},
+		{
+			input:   `+hostIP:"192.168.1.1/24"`,
+			mapping: mapping.NewIndexMapping(),
+			result: NewBooleanQueryForQueryString(
+				[]Query{
+					func() Query {
+						q := NewIPRangeQuery("192.168.1.1/24")
+						q.SetField("hostIP")
+						return q
+					}(),
+				},
+				nil,
+				nil),
+		},
+		{
 			input:   `-field5:"test phrase 2"`,
 			mapping: mapping.NewIndexMapping(),
 			result: NewBooleanQueryForQueryString(

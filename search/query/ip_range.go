@@ -124,3 +124,12 @@ func newNumericRangeInclusiveQuery(min, max uint32, minInclusive, maxInclusive b
 	m2 := float64(max)
 	return NewNumericRangeInclusiveQuery(&m1, &m2, &minInclusive, &maxInclusive)
 }
+
+func isIPRange(s string) bool {
+	_, _, err := net.ParseCIDR(s)
+	if err == nil {
+		return true
+	}
+	ip := net.ParseIP(s)
+	return ip != nil
+}
